@@ -1,0 +1,73 @@
+body{
+    color: #000000;
+    font-family: Calibri, 'Times New Roman';
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    padding: 15px;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    font-size: 12px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.container {
+    height: auto;
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    border: solid 16px white;
+  }
+img:nth-child(n){
+    display: block;
+    width: 350px;
+    height: auto;
+    position: relative;
+    border: solid 16px white;
+    margin: 2px;
+  }
+img[src = "images/landscape-1.jpg"]{
+    width:1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid white;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+  }
+.container:hover .overlay {
+    opacity: 0.7;
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+a:hover{
+    color: white;
+    background-color: navy;
+    text-transform: uppercase;
+  }
